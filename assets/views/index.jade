@@ -1,7 +1,9 @@
 doctype html
-html(lang='')
-  head
-    script(src="/js/main.js")
-    link(rel="stylesheet", href="/css/main.css")
+html(lang='')  
+  include ./includes/head.jade
   body
-    p Hello
+    include ./includes/nav.jade
+    
+    //- Content
+    
+    include ./includes/footer.jade

@@ -4,6 +4,7 @@
   "description": "Collin Perkins Portfolio Website",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
     "build-css": "node-sass --include-path scss assets/public/scss/main.scss assets/public/css/main.css",
     "watch-css": "nodemon -e scss -x 'npm run build-css'"
   },
