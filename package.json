@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "build-css": "node-sass --include-path sass assets/public/sass/styles.scss assets/public/css/styles.css",
+    "build-css": "node-sass --include-path scss assets/public/sass/styles.scss assets/public/css/styles.css",
     "watch-css": "nodemon -e sass -x 'npm run build-css'"
   },
   "repository": {

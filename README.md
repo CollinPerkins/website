@@ -5,6 +5,8 @@ Collin Perkins Portfolio Website
 2) (cmd promt 2) npm run watch-css
 
 
-ToDo
-1. Navigation
-2.
+Fix Comment Section in Contact Area.
+
+Start Portfolio Section and change out pictures
+
+Change out Pictures in Acomplishments and About Me
