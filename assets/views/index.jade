@@ -1,9 +1,266 @@
 doctype html
-html(lang='')  
-  include ./includes/head.jade
-  body
-    include ./includes/nav.jade
+html.no-js(lang='')
+  
+  //- Head Information
+  head
+    include ./includes/head.jade
     
-    //- Content
-    
-    include ./includes/footer.jade
+  //- Start of Body
+  body#top
+    section.hero
+      include ./includes/nav.jade
+      .container
+        .row
+          .col-md-10.col-md-offset-1
+            .hero-content.text-center
+              h1 Collin Perkins
+              p.intro
+                | "Hard work beats talent when talent doesn't work hard!" #[br]
+                | -TIM NOTKE!
+        a(href='#')
+          i.fa.fa-angle-down
+    section#experience.intro.section-padding
+      .container
+        h2.text-center.margin-bottom Experience
+        .row
+          .col-md-4.intro-feature
+            .intro-icon
+              span.icon(data-icon='g')
+            .intro-content
+              h5 IT Tech
+              p
+                | I currently work in IT as a level 3 Help Desk support agent. I have over 16 months of experience working in IT. I also chip in and help out in the Web Development department. 
+          .col-md-4.intro-feature
+            .intro-icon
+              span.icon(data-icon='a')
+            .intro-content
+              h5 Web Technologies
+              p
+                | I have used/programed with the following technologies. #[strong HTML5]/#[strong Jade], #[strong CSS]/#[strong SCSS], #[strong JavaScript]/#[strong JQuery], #[strong NodeJS], #[strong ExpressJS], MongoDB, Mongoose. (Bolded items are being used on this site)
+          .col-md-4.intro-feature
+            .intro-icon
+              span.icon(data-icon='d')
+            .intro-content.last
+              h5 Web Design
+              p
+                | I know how to use acouple different frameworks such as Bootsrap and SemanticUI. I also have experiance using Photoshop and some Illustrator. (Still need more time with Illustrator)
+        .row.margin-top
+          .col-md-4.intro-feature
+            .intro-icon
+              span.icon(data-icon='e')
+            .intro-content
+              h5 Software Languages 
+              p
+                | I am between begginner and intermediate in the following languages. Javascript, Ruby, Python and C. I have used each for small projects but not comfortable enough for the larger projects.
+          .col-md-4.intro-feature
+            .intro-icon
+              span.icon(data-icon='f')
+            .intro-content
+              h5 Version Control
+              p
+                | I use GIT everyday but have not used it in group projects so I know I need to learn more with this. I use JIRA at work for project managment in our web department.
+          .col-md-4.intro-feature
+            .intro-icon
+              span.icon(data-icon='b')
+            .intro-content.last
+              h5 Hobby Technologies
+              p
+                | I have used almost all windows operating systems. Currenlty running Windows 10 for gaming and I run Ubuntu for my Development envirnment. I also have modded acouple games and built a webserver with a rasberry pie. 
+    section.features.section-padding
+      .container
+        .row
+          .col-md-5.col-md-offset-7
+            .feature-list
+              h2 Acomplishments
+              p
+                | Below you will find a short list of things i've been able to achomplish in the last 16 months since I started in IT.
+              ul.features-stack
+                li.feature-item
+                  .feature-icon
+                    span.icon(data-icon='g')
+                  .feature-content
+                    h5 IT
+                    p Implemented a security door access control system with no help, within 2 week of start date and without having any prior IT experience.
+                li.feature-item
+                  .feature-icon
+                    span.icon(data-icon='a')
+                  .feature-content
+                    h5 Self Taught  
+                    p
+                      | I have taught myself just about everything I currently know from Web and IT. I have not taken any classes nor have I gone to bootcamps ect. Everything has been learned on the job or in my free time. I try to make the most of my free time to learn as much as I can in order to advance my knowledge. 
+                li.feature-item
+                  .feature-icon
+                    span.icon(data-icon='e')
+                  .feature-content
+                    h5 Web Builds
+                    p I have built acouple different projects. The first is a Inventory managment system, this website, a blog app, a to do list application and a very basic tribute page to the band Gorillaz.  
+      .device-showcase
+        .devices
+          .ipad-wrap.wp1
+          .iphone-wrap.wp2
+      .responsive-feature-img
+        img(src='/img/devices.png', alt='responsive devices')
+    section#aboutMe.features-extra.section-padding
+      .container
+        .row
+          .col-md-5
+            .feature-list
+              h2 About Me
+              p
+                | I am a geek, a nerd, a gamer, and an athlete. I love anything related to Technology! I am also a father and husband, I love to spend time with my 1 year old son named Brock and my wife Ashley. I aspire to program for a living. I went to college for computer science but ended up switching majors due to interference with basketball. I am 28 years old and I am 6'10" (throwing this in so you’re not surprised if you meet me in person).
+              p
+                | My Hobbies include gaming and playing all types of sports. I play competivie volleyball and play on my computer/XboxOne when I can. I cannot say this enough, but I love technology! It's not work when you do what you love and what I love is what I do at work. I am very hard worker and a very good problem solver. If I do not know something there is a VERY high chance I will figure it out.
+              //- a.btn.btn-ghost.btn-accent.btn-small(href='#') What's Sketch?
+      .macbook-wrap.wp3
+      .responsive-feature-img
+        img(src='/img/macbook-pro.png', alt='responsive devices')
+    //- slides
+    //- section.testimonial-slider.section-padding.text-center
+    //-   .container
+    //-     .row
+    //-       .col-md-12
+    //-         .flexslider
+    //-           ul.slides
+    //-             li
+    //-               .avatar
+    //-                 img(src='/img/avatar.jpg', alt='Sedna Testimonial Avatar')
+    //-               h2 My Family
+    //-               p.author Family of tall people
+    //-             li
+    //-               .avatar
+    //-                 img(src='/img/mani.jpg', alt='Sedna Testimonial Avatar')
+    //-               h2 Ashley Perkins
+    //-               p.author This is my wife
+    //-             li
+    //-               .avatar
+    //-                 img(src='/img/130.jpg', alt='Sedna Testimonial Avatar')
+    //-               h2 Brock Perkins
+    //-               p.author This is my Son
+    section#portfolio.portfolio-intro.section-padding
+      .container
+        .row
+          .col-md-12
+            h2.text-center Portfolio
+      //-   .row
+      //-     .col-md-6.col-sm-12.col-xs-12.leftcol
+      //-       h5 EXCLUSIVE TO CODROPS
+      //-       p
+      //-         | Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      //-     .col-md-6.col-sm-12.col-xs-12.rightcol
+      //-       h5 SPREADING PIXELS AROUND THE WORLD
+      //-       p
+      //-         | Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    section.portfolio.text-center
+      .container-fluid
+        .row
+          .col-md-4
+            article.portfolio-post
+              figure
+                a.single_image(href='/img/blog-img-01.jpg')
+                  .portfolio-img-wrap
+                    .overlay
+                      i.fa.fa-search
+                    img(src='/img/blog-img-01.jpg', alt='Sedna blog image')
+                figcaption
+                  h2
+                    a.portfolio-category(href='#', data-toggle='tooltip', data-placement='top', data-original-title='See Project') Under Construction
+                  p
+                    a.portfolio-title(href='#')
+                      //- | Getting started with Sedna 
+                      i.fa.fa-angle-right
+          .col-md-4
+            article.portfolio-post
+              figure
+                a.single_image(href='/img/blog-img-02.jpg')
+                  .portfolio-img-wrap
+                    .overlay
+                      i.fa.fa-search
+                    img(src='/img/blog-img-02.jpg', alt='Sedna blog image')
+                figcaption
+                  h2
+                    a.portfolio-category(href='#', data-toggle='tooltip', data-placement='top', data-original-title='See Project') Under Construction
+                  p
+                    a.portfolio-title(href='#')
+                      //- | Why IE8 support is deminishing 
+                      i.fa.fa-angle-right
+          .col-md-4
+            article.portfolio-post
+              figure
+                a.single_image(href='/img/blog-img-03.jpg')
+                  .portfolio-img-wrap
+                    .overlay
+                      i.fa.fa-search
+                    img.single_image(src='/img/blog-img-03.jpg', alt='Sedna blog image')
+                figcaption
+                  h2
+                    a.portfolio-category(href='#', data-toggle='tooltip', data-placement='top', data-original-title='See Project') Under Construction
+                  p
+                    a.portfolio-title(href='#')
+                      //- | Sedna tutorial: How to begin your 
+                      i.fa.fa-angle-right
+          a.btn.btn-ghost.btn-accent.btn-small(href='#') More projects
+    section#blog.hero-strip.section-padding
+      .container
+        .col-md-12.text-center
+          h2
+            | Blog Comming Soon! Link Below!          
+          a.btn.btn-ghost.btn-accent.btn-large(href='#') Blog
+          .logo-placeholder.floating-logo
+            img(src='/img/rocket.png', alt='Sketch Logo')   
+    section#contact.sign-up.section-padding.text-center
+      .container
+        .row
+          .col-md-6.col-md-offset-3
+            h2 Contact Me!
+            p Please fill free to reach out to me. Enter your information below and I will get back to you within 1 business day.
+            form.signup-form(action='/send', method='POST', role='form')
+              .form-input-group
+                i.fa.fa-user
+                input(type='text', placeholder='Enter your name', name='name' required='')
+              .form-input-group
+                i.fa.fa-envelope
+                input(type='text', placeholder='Enter your email', name='email' required='')  
+              .form-input-group
+                i.fa.fa-phone
+                input(type='tel', placeholder='Enter your phone number', name='number' required='')
+              .form-input-group
+                i.fa.fa-comment
+                input(type='text', placeholder='Enter a short reason for contact', name='comment' required='') 
+              button.btn-fill.sign-up-btn(type='submit') Submit
+    //- section.to-top
+    //-   .container
+    //-     .row
+    //-       .to-top-wrap
+    //-         a.top(href='#top')
+    //-           i.fa.fa-angle-up
+    footer
+      .container
+        .row
+          .col-md-7
+            .footer-links
+              ul.footer-group
+                li
+                  a(href='#') Experience
+                li
+                  a(href='#') About Me
+                li
+                  a(href='#') portfolio
+                li
+                  a(href='#') Contact Me
+                li
+                  a(href='#') My Resume
+              p
+                | Copyright © 2015 
+                a(href='#') Collin Perkins
+                br
+                | Crafted with 
+                span.fa.fa-heart.pulse2                
+          .social-share
+            p Please check me out on social media!
+            a.twitter-share(href='https://twitter.com/Tallerfreak')
+              i.fa.fa-twitter
+            a.facebook-share(href='https://www.facebook.com/collin.perkins3')
+              i.fa.fa-facebook
+            a.linkedin-share(href='https://www.linkedin.com/in/collin-perkins-b95937107?trk=hp-identity-photo')
+              i.fa.fa-linkedin
+    include ./includes/footer.jade    

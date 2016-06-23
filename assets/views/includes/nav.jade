@@ -1,17 +1,26 @@
-
-.header
-  nav
-    ul
-      li
-        a(href="#") Experience
-      li
-        a(href="#") About Me
-      li
-        a(href="#") Portfolio
-      li
-        a(href="#") Contact Me
-      li.pull-right
-        a(href="#") My Resume  
-      li.pull-right
-        a(href="#") Blog
-      
+section.navigation
+  header
+    .header-content
+      .logo
+        a(href='#')
+          //- img(src='/img/sedna-logo.png', alt='Sedna logo')
+      .header-nav
+        nav
+          ul.primary-nav
+            li
+              a(href='#experience') Experience
+            li
+              a(href='#aboutMe') About Me
+            li
+              a(href='#portfolio') portfolio
+            li
+              a(href='#contact') Contact Me
+          ul.member-actions
+            li
+              a.login(href='#blog') Blog
+            li
+              form(method="get" action="collinperkinsresume.pdf")
+                button(type="submit").btn-white.btn-small MY RESUME
+      .navicon
+        a.nav-toggle(href='#')
+          span
