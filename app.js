@@ -19,6 +19,11 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
+// Portfolio page
+app.get('/portfolio', function(req, res){
+  res.render('portfolio/portfolio');
+});
+
 app.post('/send', function(req, res){
   var transporter = nodemailer.createTransport({
     service: 'Gmail',
