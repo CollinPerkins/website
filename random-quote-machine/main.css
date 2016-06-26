@@ -1,0 +1,38 @@
+body {
+  background-color: #337ab7;
+}
+.contentArea {
+  background-color: white;
+  margin: 0px auto;
+  text-align: center;
+  width: 60%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+#quoteArea {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+.twitter-share-button {
+  float: left;
+  margin: 30px 0px;
+  margin-left: 50px;
+}
+
+#newQuote {
+  float: right;
+  margin: 30px 0px;
+  margin-right: 50px;
+
+}
